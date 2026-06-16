@@ -58,11 +58,7 @@ $$
 This conservative system has Hamiltonian energy
 
 $$
-E(\theta,\omega)
-=
-\frac{1}{2}mL^2\omega^2
-+
-mgL\left(1-\cos(\theta)\right).
+E(\theta,\omega)=\frac{1}{2}mL^2\omega^2+mgL\left(1-\cos(\theta)\right).
 $$
 
 ### Driven Damped Nonlinear Pendulum
@@ -70,20 +66,9 @@ $$
 To study more complex nonlinear behavior, the model is extended to a driven damped pendulum:
 
 $$
-\theta''
-+
-q\theta'
-+
-\sin(\theta)
-=
-b\cos(\Omega t).
+\theta'' + q\theta' + \sin(\theta)=b\cos(\Omega t).
 $$
 
-Introducing angular velocity
-
-$$
-\omega = \theta',
-$$
 
 the second-order equation can be rewritten as the first-order system
 
@@ -109,12 +94,7 @@ $$
 RK4 updates the solution by
 
 $$
-y_{n+1}
-=
-y_n
-+
-\frac{h}{6}
-\left(k_1 + 2k_2 + 2k_3 + k_4\right).
+y_{n+1}=y_n+\frac{h}{6}\left(k_1+2k_2+2k_3+k_4\right).
 $$
 
 The four intermediate slopes are defined as
